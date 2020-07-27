@@ -1,0 +1,104 @@
+body {
+  background-color: #232323;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+  text-align: center;
+  transition: background-color 0.5s;
+  background-color: #0096F0;
+  padding: 2em;
+}
+
+h1 {
+  color: white;
+  font-weight: 500;
+  line-height: 1.1;
+  font-weight: normal;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+#rgb {
+  display: block;
+  font-size: 200%;
+  margin: 0.2em 0;
+  letter-spacing: 110%;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.square {
+  float: left;
+  width: 30%;
+  padding-bottom: 30%;
+  margin: 1.66%;
+  border-radius: 20%;
+  transition: opacity 0.5s, background-color 0.5s;
+  --webkit-transition: opacity 0.5s, background-color 0.5s;
+  --moz-transition: opacity 0.5s, background-color 0.5s;
+}
+
+.square.hidden {
+  opacity: 0;
+}
+
+#msgBar {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #efefef;
+  height: 2em;
+  text-transform: uppercase;
+}
+
+#msgBar .container {
+  padding: 0em 1em;
+  height: 100%;
+  max-width: 575px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+  --webkit-transition: all 0.5s;
+  --moz-transition: all 0.5s;
+
+}
+
+#msgBar button {
+  height: 100%;
+  font-weight: 700;
+  padding: 0px 1em;
+  color: rgb(0, 150, 240);
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 0.2s;
+  --webkit-transition: all 0.2s;
+  --moz-transition: all 0.2s;
+}
+
+#msgBar button:hover, #msgBar button.selected {
+  background-color: rgb(0, 150, 240);
+  color: #efefef;
+  cursor: pointer;
+}
+#msgBar button:focus {
+  border: none;
+  outline: none;
+}
+
