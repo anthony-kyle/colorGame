@@ -129,7 +129,7 @@ function refreshSquares(){                        // Function to change the colo
 function startGame(){                             // Function to start the game
   colors = [];
   updateReset();
-  updateHeaderColor("#0096F0");
+  updateHeaderColor("rgba(64,9,96,1)");
   generateColorArray();
   selectColor();
   refreshSquares();
